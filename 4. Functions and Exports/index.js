@@ -64,19 +64,20 @@ function modifyArray(array, callback) {
 // Then, import and call the add method here and display the value of the PI constant
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Importing the add method and PI constant from mathUtils.js
-import { add, PI } from './mathUtils.js';
+const mathUtils = require('./mathUtils');
 
-// Calling the add method and displaying the value of the PI constant
-const sum = add(5, 10);
+// Call the add method with two numbers
+const sum = mathUtils.add(5, 3);
 console.log('Sum:', sum);
-console.log('PI:', PI);
 
+// Display the value of the PI constant
+console.log('PI:', mathUtils.PI);
 
 // Todo 4.5 See isPalindrome.js for the instructions to create the isPalindrome method.
 // Then, import and call the isPalindrome method here
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
-const isPalindrome = require('./isPalindrome');
+const isPalindrome = require('./isPalindrome.js');
 
 // Call the isPalindrome function with a word
 const word = 'rawr';
