@@ -1,7 +1,9 @@
 
-// Todo 5.4.1 Create a function called add that takes in two numbers and returns their sum
+// Function to add two numbers
+export function add(a, b) {
+    return a + b;
+}
 
-// Todo 5.4.2 Create a constant that contains the approximate value of PI 
-
-// Todo 5.4.3 Export the function and constant
+// Constant for the approximate value of PI
+export const PI = 3.14159;
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
